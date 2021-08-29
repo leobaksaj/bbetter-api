@@ -1,5 +1,5 @@
 {
-  "name": "bbetter-api",
+  "name": "bbetter-api-2",
   "version": "1.0.0",
   "description": "node api hosted on heroku",
   "main": "index.js",
