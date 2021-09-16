@@ -1,11 +1,23 @@
 const express = require('express')
 const router = express.Router()
 const Event = require('../models/event')
+const http = require('https')
+const axios = require('axios')
 
 /*------------------------------------------------------------------------------------------ */
 /*-------------------------------------USER------------------------------------------------- */
 /*------------------------------------------------------------------------------------------ */
 
+router.post('/gas', async (req, res) => {
+    const resp = await axios({
+        method: "GET",
+        url: `https://google.com`,
+      });
+
+      console.log(resp.data)
+
+      res.status(200).send("test")
+})
 
 //POST: USER: CREATE A NEW EVENT
 router.post('/new/:userId', (req, res) => {
